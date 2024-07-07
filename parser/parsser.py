@@ -316,9 +316,9 @@ def scrape_site(driver, url, base_url, visited, output_directory):
         print(error_message)
 
 
-def main():
-    start_url = 'https://rustore.ru/help'
-    # start_url = 'https://www.rustore.ru/help/sdk/payments/unity/3-1-0'
+def make_parsing():
+    # start_url = 'https://rustore.ru/help' # полный парсинг (занимает много времени) 
+    start_url = 'https://www.rustore.ru/help/sdk/payments/unity/3-1-0' (парсинг конкретной страницы)
     visited = set()
     options = Options()
     options.headless = True
@@ -326,7 +326,3 @@ def main():
     output_directory = 'json_files'
     with webdriver.Chrome(service=service, options=options) as driver:
         scrape_site(driver, start_url, start_url, visited, output_directory)
-
-
-if __name__ == '__main__':
-    main()
