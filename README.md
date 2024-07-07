@@ -27,6 +27,7 @@ cd rustore_docs
 python -m venv <venv name>
 pip install -r requirements.txt
 streamlit run side.py
+```
 
 ### Особенности системы:
  - Применение Sota-моделей для получения эмбеддингов
