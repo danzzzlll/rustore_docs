@@ -20,11 +20,3 @@ def load_page2():
             update_indexes()
         st.success("Indexes updates successfully.")
             
-
-    # Example content for the second page
-#     st.markdown("""
-#     ## Additional Information
-#     Here you can provide more information related to your app.
-#     """)
-
-# Replace 'path_to_your_script.py' with the actual path to your script
